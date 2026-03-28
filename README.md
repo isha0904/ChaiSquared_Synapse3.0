@@ -135,7 +135,7 @@ eco-label-vision/
 
 ## Demo
 
-Add your demo video link here
+[Demo Video Link](https://drive.google.com/file/d/1_myW0q5dWfbmDZGLt-VvKLAHKC0l4scq/view?usp=sharing)
 ---
 
 ## Impact
