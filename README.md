@@ -124,12 +124,11 @@ A dataset of 30,000+ images categorized for Computer Vision models.
 eco-label-vision/
 │── app.py
 │── mobilenetv2.pt
-│── yolo_model.pt
+│── YoloModel.pt
 │── requirements.txt
 │── README.md
-│── assets/
-│    ├── demo_video.mp4
-│    ├── flowchart.png
+│── demo_video.mp4
+│── flowchart.png
 ```
 
 ---
