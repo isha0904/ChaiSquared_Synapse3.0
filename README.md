@@ -106,43 +106,6 @@ Eco-Label Vision is an AI-driven system that:
 
 A dataset of 30,000+ images categorized for Computer Vision models.
 
-Structured dataset with hierarchical categories:
-
-```
-Hazardous/
-Non-Recyclable/
-Organic/
-Recyclable/
-```
-
-Each category contains subcategories for better classification.
-
----
-
-## Model Strategy
-
-```
-YOLO → Detect object
-        ↓
-MobileNet → Classify material
-        ↓
-Mapping → Disposal category
-```
-
----
-
-## Example Output
-
-```
-Detected: Plastic Bottle  
-Confidence: 94%  
-
-Category: Recyclable  
-Instruction: Wash & place in Blue Bin  
-
-Carbon Saved: +30g CO₂ 
-```
-
 ---
 
 ## Gamification
@@ -174,13 +137,6 @@ eco-label-vision/
 ## Demo
 
 Add your demo video link here
-
----
-
-## Flowchart
-
-Add system flowchart image here
-
 ---
 
 ## Impact
@@ -193,7 +149,6 @@ Add system flowchart image here
 
 ## Future Improvements
 
-* Real-time video streaming
 * Advanced detection models
 * Mobile app integration
 * Cloud deployment
@@ -207,7 +162,6 @@ Add system flowchart image here
 - Chaitrali Bhosale
 ---
 
-## 💬 Final Note
 
 "We don’t just classify waste — we guide decisions." ♻️
 
