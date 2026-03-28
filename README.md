@@ -1,6 +1,6 @@
 # ChaiSquared_Synapse3.0
 
-# ♻️ Eco-Label Vision — Smart Bin Assistant
+# ♻️ Green Vision — Smart Bin Assistant
 
 > AI-powered Computer Vision system for intelligent waste segregation and sustainable disposal guidance
 
