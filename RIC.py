@@ -84,7 +84,7 @@ RIC_INFO = {
 }
 
 
-# 🔥 ULTIMATE TRIANGLE DETECTOR
+#  ULTIMATE TRIANGLE DETECTOR
 def detect_triangle_regions_enhanced(img):
     """Detect ALL possible RIC triangle shapes"""
     gray = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2GRAY)
@@ -127,7 +127,7 @@ def detect_triangle_regions_enhanced(img):
     
     return regions[:10]  # Limit to top 10 candidates
 
-# 🔥 ENHANCED OCR with multiple pipelines
+#  ENHANCED OCR with multiple pipelines
 def extract_ric_enhanced(crop):
     """Try every possible OCR method"""
     
@@ -187,7 +187,7 @@ def extract_ric_enhanced(crop):
     
     return None
 
-# 🎯 MAIN DETECTION FUNCTION
+#  MAIN DETECTION FUNCTION
 def detect_ric_supercharged(image):
     img = np.array(image)
     output = img.copy()
@@ -199,7 +199,7 @@ def detect_ric_supercharged(image):
 
     full_text = " ".join([text for (_, text, _) in results_full]).lower()
 
-    # 🔥 RULE: "OTHER" → RIC 7 (OVERRIDE EVERYTHING)
+    # RULE: "OTHER" → RIC 7 (OVERRIDE EVERYTHING)
     if "other" in full_text:
         cv2.putText(output, "RIC #7 (OTHER detected)",
                     (20, 40),
@@ -230,7 +230,7 @@ def detect_ric_supercharged(image):
                 cv2.putText(output, f" RIC #{ric}", (x, y-10),
                            cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 3)
     
-    # 🔥 FALLBACK: scan full image if nothing found
+    #  FALLBACK: scan full image if nothing found
         if best_ric is None:
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             gray = cv2.convertScaleAbs(gray, alpha=2.5, beta=40)
@@ -348,7 +348,7 @@ if file:
         st.markdown("##  SUCCESS! RIC Code Detected")
         st.markdown(f"### RIC #{ric_code}")
 
-        # 🔥 If using detailed dictionary
+        # f using detailed dictionary
         info = RIC_INFO[ric_code]
 
         st.markdown(f"**Type:** {info['name']}")
@@ -357,14 +357,14 @@ if file:
         st.markdown(f"**Safety:** {info['safety']}")
         st.markdown(f"**Recycling:** {info['recycling']}")
 
-        # ✅ FINAL recyclable output (YES / NO)
+        # FINAL recyclable output (YES / NO)
         recyclable = "Yes" if ric_code in ["1", "2", "5"] else "No"
         st.markdown(f"### ♻️ Recyclable: {recyclable}")
 
         st.balloons()
 
     else:
-        st.markdown("## ❌ No RIC detected")
+        st.markdown("##  No RIC detected")
         st.info("""
     **Tips for better results:**
     - Get CLOSE to the recycling triangle
