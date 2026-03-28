@@ -51,6 +51,7 @@ Eco-Label Vision is an AI-driven system that:
 
 * YOLO (fine-tuned) → Object Detection
 * MobileNet (fine-tuned) → Material Classification
+<img width="1003" height="211" alt="image" src="https://github.com/user-attachments/assets/3fb36bec-fd7e-45fb-ac66-8fdec4c7752a" />
 
 ### OCR
 
